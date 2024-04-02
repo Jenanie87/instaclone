@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uhuuhgram</title>
+    <link rel="icon" type="image/svg+xml" href="img/cameraIcon_pink.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script defer src="script.js"></script>
+</head>
+<body onload="render()">
+    <section id="left_section" class="flex_c desktop_none">
+        <div class="top_menu flex_c">
+            <h1 onclick="render()" >Uhuuhgram</h1>
+            <nav class="navBar flex_c">
+                <div onclick="render()" class="icon_text_navbar">
+                    <img class="navbar_icon invert_svg cursor_p" src="img/home_icon.svg" alt="home icon">
+                    <a href="#">Startseite</a>
+                </div>
+                <div class="icon_text_navbar">
+                    <img class="navbar_icon invert_svg cursor_p" src="img/search_icon.svg" alt="search icon">
+                    <a href="#">Suche</a>
+                </div>
+                <div class="icon_text_navbar">
+                    <img class="navbar_icon invert_svg cursor_p" src="img/message_icon.svg" alt="message icon">
+                    <a href="#">Nachrichten</a>
+                </div>
+                <div class="icon_text_navbar">
+                    <img class="navbar_icon invert_svg cursor_p" src="img/heart_icon.svg" alt="heart icon">
+                    <a href="#">Benachrichtigungen</a>
+                </div>
+                <div class="icon_text_navbar">
+                    <img class="navbar_icon invert_svg cursor_p" src="img/plus_icon.svg" alt="plus icon">
+                    <a href="#">Erstellen</a>
+                </div>
+                <div class="icon_text_navbar">
+                    <img class="navbar_icon profile_style cursor_p" src="img/profile.jpg" alt="plus icon">
+                    <a href="#">Profil</a>
+                </div>
+            </nav>
+        </div>
+        <nav class="navBar flex_c">
+            <div class="icon_text_navbar">
+                <img class="navbar_icon invert_svg" src="img/owl_icon.svg" alt="owl icon">
+                <a href="#">Uhuuhu</a>
+            </div>
+            <div class="icon_text_navbar">
+                <img class="navbar_icon invert_svg" src="img/burger_icon.svg" alt="burger icon">
+                <a href="#">Mehr</a>
+            </div>
+        </nav>
+    </section>
+
+    <section id="left_section" class="flex_c small_d_none">
+        <div class="top_menu flex_c">
+            <img onclick="render()" class="navbar_icon invert_ColorSvg cursor_p" src="img/cameraIcon.svg" alt="instagram icon">
+            <nav class="navBar flex_c">
+                <div onclick="render()" class="icon_text_navbar">
+                    <img class="navbar_icon invert_svg cursor_p" src="img/home_icon.svg" alt="home icon">
+                </div>
+                <div class="icon_text_navbar">
+                    <img class="navbar_icon invert_svg cursor_p" src="img/search_icon.svg" alt="search icon">
+                </div>
+                <div class="icon_text_navbar">
+                    <img class="navbar_icon invert_svg cursor_p" src="img/message_icon.svg" alt="message icon">
+                </div>
+                <div class="icon_text_navbar">
+                    <img class="navbar_icon invert_svg cursor_p" src="img/heart_icon.svg" alt="heart icon">
+                </div>
+                <div class="icon_text_navbar">
+                    <img class="navbar_icon invert_svg cursor_p" src="img/plus_icon.svg" alt="plus icon">
+                </div>
+                <div class="icon_text_navbar">
+                    <img class="navbar_icon profile_style cursor_p" src="img/profile.jpg" alt="profile icon">
+                </div>
+            </nav>
+        </div>
+        <nav class="navBar flex_c">
+            <div class="icon_text_navbar">
+                <img class="navbar_icon invert_svg" src="img/owl_icon.svg" alt="owl icon">
+            </div>
+            <div class="icon_text_navbar">
+                <img class="navbar_icon invert_svg" src="img/burger_icon.svg" alt="burger icon">
+            </div>
+        </nav>
+    </section>
+
+    <section id="left_section_mobile" class="d_none">
+        <div class="top_menu_mobile">
+            <nav class="navBar_mobile">
+                <div onclick="render()" class="icon_text_navbar">
+                    <img class="navbar_icon invert_svg cursor_p" src="img/home_icon.svg" alt="home icon">
+                </div>
+                <div class="icon_text_navbar">
+                    <img class="navbar_icon invert_svg cursor_p" src="img/search_icon.svg" alt="search icon">
+                </div>
+                <div class="icon_text_navbar d_none_mobile">
+                    <img class="navbar_icon invert_svg cursor_p" src="img/message_icon.svg" alt="message icon">
+                </div>
+                <div class="icon_text_navbar d_none_mobile">
+                    <img class="navbar_icon invert_svg cursor_p" src="img/heart_icon.svg" alt="heart icon">
+                </div>
+                <div class="icon_text_navbar d_none_mobile">
+                    <img class="navbar_icon invert_svg cursor_p" src="img/plus_icon.svg" alt="plus icon">
+                </div>
+                <div class="icon_text_navbar">
+                    <img class="navbar_icon profile_style cursor_p" src="img/profile.jpg" alt="profile icon">
+                </div>
+            </nav>
+        </div>
+        <nav class="navBar_mobile">
+            <div class="icon_text_navbar">
+                <img class="navbar_icon invert_svg" src="img/owl_icon.svg" alt="owl icon">
+            </div>
+            <div class="icon_text_navbar">
+                <img class="navbar_icon invert_svg" src="img/burger_icon.svg" alt="burger icon">
+            </div>
+        </nav>
+    </section>
+
+    <section id="main_part">
+        <div class="main_part_content">
+        <div class="left_main_part flex_c">
+            <div class="top_main_part flex_c">
+                <div class="choose_content">
+                    <p class="choose_text cursor_p">Für dich</p>
+                    <p class="choose_text color_grey cursor_p">Gefolgt</p>
+                </div>
+                <div class="horizontal_line"></div>
+                <div id="following_people">
+                    <div class="following_person flex_c">
+                            <img class="img_profile new_status cursor_p" src="img/profiles/deadpool.jpg" alt="profile picture">
+                        <p class="name_profile cursor_p">deadpool</p>
+                    </div>
+                    <div class="following_person flex_c">
+                            <img class="img_profile new_status cursor_p" src="img/profiles/crunchyroll.png" alt="profile picture">
+                        <p class="name_profile cursor_p">crunchyr...</p>
+                    </div>
+                    <div class="following_person flex_c">
+                            <img class="img_profile new_status cursor_p" src="img/profiles/mikasa_aot.jpg" alt="profile picture">
+                        <p class="name_profile cursor_p">mikasa.ack...</p>
+                    </div>
+                    <div class="following_person flex_c">
+                            <img class="img_profile cursor_p" src="img/profiles/news.jpg" alt="profile picture">
+                        <p class="name_profile cursor_p">nachricht...</p>
+                    </div>
+                    <div class="following_person flex_c">
+                            <img class="img_profile cursor_p" src="img/profiles/travel.jpg" alt="profile picture">
+                        <p class="name_profile cursor_p">travel&m...</p>
+                    </div>
+                    <div class="following_person flex_c">
+                            <img class="img_profile cursor_p" src="img/profiles/yoga.jpg" alt="profile picture">
+                        <p class="name_profile cursor_p">yogaandi</p>
+                    </div>
+                    <div class="following_person flex_c">
+                            <img class="img_profile cursor_p" src="img/profiles/DA.png" alt="profile picture">
+                        <p class="name_profile cursor_p">develope...</p>
+                    </div>
+                    <div class="following_person flex_c">
+                            <img class="img_profile img cursor_p" src="img/profiles/arme_ritter.jpg" alt="profile picture">
+                        <p class="name_profile cursor_p">kochwelt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="posts" class="flex_c">
+
+<!--             render JS -->
+
+            </div>
+
+        </div>
+        <div class="right_main_part flex_c">
+            <div class="user_profile">
+                <div class="img_name">
+                    <img class="profile_style_right cursor_p" src="img/profile.jpg" alt="profile picture">
+                    <div class="name_block">
+                        <p class="name cursor_p">jenanie_art</p>
+                        <p class="sub_name">Jennifer D</p>
+                    </div>
+                </div>
+                <p class="profile_text cursor_p">Wechseln</p>
+            </div>
+
+            <div class="user_profiles flex_c">
+                <div class="user_profile">
+                    <p class="name color_grey">Vorschläge für dich</p>
+                    <p class="profile_text cursor_p">Alle anzeigen</p>
+                </div>
+                <div class="user_profile">
+                    <div class="img_name">
+                        <img class="profile_style_right cursor_p" src="img/profiles/random_person1.jpg" alt="profile picture">
+                        <div class="name_block">
+                            <p class="name cursor_p">alinadoe4355</p>
+                            <p class="sub_name">Neu auf Instagram</p>
+                        </div>
+                    </div>
+                    <p class="profile_text cursor_p">Folgen</p>
+                </div>
+                <div class="user_profile">
+                    <div class="img_name">
+                        <img class="profile_style_right cursor_p" src="img/profiles/random_person2.jpg" alt="profile picture">
+                        <div class="name_block">
+                            <p class="name cursor_p">max.mustermann386</p>
+                            <p class="sub_name">Neu auf Instagram</p>
+                        </div>
+                    </div>
+                    <p class="profile_text cursor_p">Folgen</p>
+                </div>
+                <div class="user_profile">
+                    <div class="img_name">
+                        <img class="profile_style_right cursor_p" src="img/profiles/random_person3.jpg" alt="profile picture">
+                        <div class="name_block">
+                            <p class="name cursor_p">kittylover!3</p>
+                            <p class="sub_name">Folgt dir</p>
+                        </div>
+                    </div>
+                    <p class="profile_text cursor_p">Folgen</p>
+                </div>
+                <div class="user_profile">
+                    <div class="img_name">
+                        <img class="profile_style_right" src="img/profiles/random_person4.png" alt="profile picture">
+                        <div class="name_block">
+                            <p class="name cursor_p">therealerenjaeger</p>
+                            <p class="sub_name">Neu auf Instagram</p>
+                        </div>
+                    </div>
+                    <p class="profile_text cursor_p">Folgen</p>
+                </div>
+                <div class="user_profile">
+                    <div class="img_name">
+                        <img class="profile_style_right cursor_p" src="img/profiles/random_person5.png" alt="profile picture">
+                        <div class="name_block">
+                            <p class="name cursor_p">sakura_ramen</p>
+                            <p class="sub_name">Folgt dir</p>
+                        </div>
+                    </div>
+                    <p class="profile_text cursor_p">Folgen</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </section>
+
+    
+    
+</body>
+</html>
